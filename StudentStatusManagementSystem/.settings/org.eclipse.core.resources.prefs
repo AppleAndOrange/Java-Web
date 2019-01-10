@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//WebRoot/ManagementSystem/navicator.jsp=UTF-8
+encoding//WebRoot/RegisterAndLogin/login.jsp=UTF-8
+encoding//WebRoot/RegisterAndLogin/register.jsp=UTF-8
+encoding//WebRoot/Student/index.jsp=UTF-8
+encoding//WebRoot/Student/result.jsp=UTF-8
+encoding//WebRoot/Student/student.jsp=UTF-8
+encoding//WebRoot/Teacher/OperatorGrade.jsp=UTF-8
+encoding//WebRoot/Teacher/result.jsp=UTF-8
+encoding//WebRoot/Teacher/teacher.jsp=UTF-8
+encoding//src/com/Alisa/Servlet/ValidCodeServelet.java=UTF-8
+encoding//src/db/Database.java=UTF-8
+encoding//test/entity/TestStudent.java=UTF-8
+encoding//test/entity/TestUser.java=UTF-8

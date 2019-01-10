@@ -1,0 +1,34 @@
+.logo{
+	margin:50px;
+	width:20%;
+}
+.sysmbol{
+	margin-left:20%;
+	width:500px;
+	height:500px;
+}
+form{
+	margin-left:70%;
+	margin-top:-20%;
+}
+.userName{
+	width:200px;
+	
+}
+.password{
+	width:200px;
+	
+}
+.randNumber{
+	width:80px;
+}
+input{
+	margin-top:20px;
+}
+.valid{
+	margin:0px;
+	margin-bottom:-10px
+}
+.login{
+	width:220px;
+}

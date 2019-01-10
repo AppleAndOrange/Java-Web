@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+<hibernate-mapping>
+<!-- 设置的主键，在输入时，如果与主键冲突，不会输入到数据库 -->
+	<class name="com.Alisa.Entity.User" table="user">
+		<id name="account" type="long">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="userName" type="java.lang.String"></property>
+		<property name="password" type="java.lang.String"></property>
+		<property name="type" type="java.lang.String"></property>
+		<property name="cla" type="java.lang.String"></property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="true"></constant>
+	<!-- <package name="ParamAction" namespace="/" extends="struts-default"> 
+		<action name="ParamTest" class="com.Alisa.Info.GetParam" method="execute"> 
+		<result > RegisterAndLogin/test.jsp </result> </action> </package> -->
+	<package name="UserAction" namespace="/RegisterAndLogin"
+		extends="struts-default">
+		
+		<action name="User_*" class="action.UserAction" method="{1}">
+			<interceptor-ref name="defaultStack">
+              <param name="modelDriven.refreshModelBeforeResult">true</param>
+            </interceptor-ref>
+			<result name="register_success">
+				/RegisterAndLogin/register.jsp
+			</result>
+			<result name="register_fail">
+				/RegisterAndLogin/failure.jsp
+			</result>
+			<result name="update_success">
+				/RegisterAndLogin/register.jsp
+			</result>
+			<result name="update_fail">
+				/RegisterAndLogin/failure.jsp
+			</result>
+			<result name="delete_success">
+				/RegisterAndLogin/register.jsp
+			</result>
+			<result name="delete_fail">
+				/RegisterAndLogin/failure.jsp
+			</result>
+		</action>
+		<action name="Login_*" class="login.LoginAction" method="{1}">
+			<result name="admin_login_success">
+				/RegisterAndLogin/register.jsp
+			</result>
+			<result name="teacher_login_success">
+				/Teacher/teacher.jsp
+			</result>
+			<result name="student_login_success">
+				/Student/student.jsp
+			</result>
+			<result name="user_login_failure">
+				/RegisterAndLogin/failure.jsp
+			</result>
+		</action>
+		<action name="Grade_*" class="action.GradeAction" method="{1}">
+			<result name="add_success">
+				/Teacher/OperatorGrade.jsp
+			</result>
+			<result name="add_fail">
+				/RegisterAndLogin/failure.jsp
+			</result>
+			<result name="update_success">
+				/Teacher/OperatorGrade.jsp
+			</result>
+			<result name="update_fail">
+				/RegisterAndLogin/failure.jsp
+			</result>
+			<result name="delete_success">
+				/Teacher/OperatorGrade.jsp
+			</result>
+			<result name="delete_fail">
+				/RegisterAndLogin/failure.jsp
+			</result>
+			
+			<result name="import_success">
+				/Teacher/success.jsp
+			</result>
+			<result name="import_fail">
+				/RegisterAndLogin/failure.jsp
+			</result>
+		</action>
+	</package>
+</struts>    
